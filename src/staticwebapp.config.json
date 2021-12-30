@@ -7,20 +7,16 @@
     },    
     "routes": [
         {
-            "route": "/",
-            "rewrite": "/index.html"
-        },
-        {
-            "route": "/index.html",
-            "allowedRoles": [
-                "authenticated"
-            ]
-        },
-        {
             "route": "/login",
             "rewrite": "/login.html",
             "allowedRoles": [
                 "anonymous"
+            ]
+        },
+        {
+            "route": "/*",
+            "allowedRoles": [
+                "authenticated"
             ]
         }
     ],
