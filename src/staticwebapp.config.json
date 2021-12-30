@@ -25,7 +25,7 @@
                 "clientSecretSettingName": "TENANT2_CLIENTSECRET"
               },
               "openIdConnectConfiguration": {
-                "wellKnownOpenIdConfiguration": "TENANT2_OPENIDCONFIGURATION" 
+                "wellKnownOpenIdConfiguration": "https://login.microsoftonline.com/46fc1259-8b47-4600-b595-52cb2074bd58/v2.0/.well-known/openid-configuration" 
               }
             },
             "login": {
