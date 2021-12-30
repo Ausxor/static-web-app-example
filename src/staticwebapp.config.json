@@ -7,8 +7,10 @@
     },    
     "routes": [
         {
-            "route": "/",
-            "rewrite": "/index.html"
+            "route": "/index.html",
+            "allowedRoles": [
+                "authenticated"
+            ]
         },
         {
             "route": "/login",
