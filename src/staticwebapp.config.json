@@ -4,12 +4,12 @@
         "customOpenIdConnectProviders": {
           "tenantOneProvider": {
             "registration": {
-              "clientIdSettingName": "tenant1_clientId",
+              "clientIdSettingName": "TENANT1_CLIENTID",
               "clientCredential": {
-                "clientSecretSettingName": "tenant1_clientSecret"
+                "clientSecretSettingName": "TENANT1_CLIENTSECRET"
               },
               "openIdConnectConfiguration": {
-                "wellKnownOpenIdConfiguration": "tenant1_wellKnownOpenIdConfiguration"
+                "wellKnownOpenIdConfiguration": "https://login.microsoftonline.com/9f6a72f8-9ea8-4731-bddf-d87068794b96/v2.0/.well-known/openid-configuration"
               }
             },
             "login": {
@@ -20,12 +20,12 @@
           },
           "tenantTwoProvider": {
             "registration": {
-              "clientIdSettingName": "tenant2_clientId",
+              "clientIdSettingName": "TENANT2_CLIENTID",
               "clientCredential": {
-                "clientSecretSettingName": "tenant2_clientSecret"
+                "clientSecretSettingName": "TENANT2_CLIENTSECRET"
               },
               "openIdConnectConfiguration": {
-                "wellKnownOpenIdConfiguration": "tenant2_wellKnownOpenIdConfiguration"
+                "wellKnownOpenIdConfiguration": "TENANT2_OPENIDCONFIGURATION"
               }
             },
             "login": {
