@@ -1,0 +1,40 @@
+{
+    "auth": {
+      "identityProviders": {
+        "customOpenIdConnectProviders": {
+          "tenantOneProvider": {
+            "registration": {
+              "clientIdSettingName": "ApplicationClientIdTenant1",
+              "clientCredential": {
+                "clientSecretSettingName": "ClientSecretTenant1"
+              },
+              "openIdConnectConfiguration": {
+                "wellKnownOpenIdConfiguration": "https://login.microsoftonline.com/DirectoryTenantIdTenant1/v2.0/.well-known/openid-configuration"
+              }
+            },
+            "login": {
+              "nameClaimType": "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name",
+              "scopes": ["openid", "profile", "email"],
+              "loginParameterNames": []
+            }
+          },
+          "tenantTwoProvider": {
+            "registration": {
+              "clientIdSettingName": "ApplicationClientIdTenant1",
+              "clientCredential": {
+                "clientSecretSettingName": "ClientSecretTenant2"
+              },
+              "openIdConnectConfiguration": {
+                "wellKnownOpenIdConfiguration": "https://login.microsoftonline.com/DirectoryTenantIdTenant2/v2.0/.well-known/openid-configuration"
+              }
+            },
+            "login": {
+              "nameClaimType": "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name",
+              "scopes": ["openid", "profile", "email"],
+              "loginParameterNames": []
+            }
+          }
+        }
+      }
+    }
+}
