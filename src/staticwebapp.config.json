@@ -8,48 +8,13 @@
     "routes": [
         {
             "route": "/",
-            "rewrite": "/index.html",
-            "allowedRoles": [
-                "authenticated"
-            ]
+            "rewrite": "/index.html"
         },
         {
             "route": "/login",
             "rewrite": "/login.html",
             "allowedRoles": [
                 "anonymous"
-            ]
-        },
-        {
-            "route": "/",
-            "rewrite": "/index.html",
-            "allowedRoles": [
-                "authenticated"
-            ]
-        },
-        {
-            "route": "/login",
-            "rewrite": "/.auth/login/aad"
-        },
-        {
-            "route": "/logout",
-            "redirect": "/.auth/logout"
-        },
-        {
-            "route": "/.auth/login/github",
-            "statusCode": 404,
-            "allowedRoles": [
-                "anonymous"
-            ]
-        },
-        {
-            "route": "/.auth/login/twitter",
-            "statusCode": 404
-        },
-        {
-            "route": "/*",
-            "allowedRoles": [
-                "authenticated"
             ]
         }
     ],
